@@ -1,0 +1,88 @@
+body {
+    font-family: "Josefin Sans";
+    background:linear-gradient(180deg, rgb(181 211 252 / 60%) 0%, rgb(255 255 255 / 20%) 100%);
+    background-attachment: fixed;
+    padding: 1rem;
+}
+
+main {
+    margin: 1rem;
+}
+
+h1, h2 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+
+h2 {
+    padding-top: 3rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    position: relative;
+    transition: all 0.2s;
+    left: 0;
+}
+
+a:hover {
+    left: 2px;
+}
+
+a:visited {
+    color: rgb(165 165 165);
+}
+
+ul {
+    padding: 0.5rem 1rem;
+}
+
+
+ul.html-and-css, ul.js {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+li > ul {
+    border: solid 1px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 0px;
+}
+
+li:nth-of-type(n) > ul {
+    background-color: white;
+}
+
+li:nth-of-type(2n) > ul {
+    background-color: rgb(206 231 255);
+}
+
+li > ul > li:nth-of-type(2) {
+    padding-left: 1rem;
+}
+li > ul > li:nth-of-type(3) {
+    padding-left: 2rem;
+}
+li > ul > li:nth-of-type(4) {
+    padding-left: 3rem;
+}
+
+ul.html-and-css > li {
+    width: 13rem;
+}
+
+ul.js > li {
+    min-width: 13rem;
+    max-width: 18rem;
+}

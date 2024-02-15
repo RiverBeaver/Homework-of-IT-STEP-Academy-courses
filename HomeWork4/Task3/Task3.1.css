@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+header, menu, aside, main, section, footer {
+    margin: 5px;
+}
+
+header, menu, footer {
+    min-width: 710px;
+    width: 99%;
+}
+
+#container {
+    margin: 5px auto;
+    min-width: 900px;
+    width: 100%;
+}
+
+header {
+    padding: 20px 25px;
+    background-color: #882e54;
+    margin: 10px 5px;
+}
+
+menu {
+    padding: 10px 25px;
+    background-color: #73083a;
+}
+
+aside {
+    padding: 20px 25px 25px;
+    background-color: #be6a8e;
+    margin-bottom: 8px;
+}
+
+#asides {
+    float: left;
+    min-width: 180px;
+    vertical-align: top;
+    margin: 0px;
+    width: 19.5vw;
+}
+
+#asides aside:nth-of-type(2) {
+    min-height: 60px;
+    height: 50vh;
+}
+
+#container > aside:nth-of-type(1) {
+    float: right;
+    margin-right: 0.7%;
+    vertical-align: top;
+    padding-left: 45px;
+    padding-right: 37px;
+    min-width: 94px;
+    width: 10vw;
+    min-height: 172px;
+    height: 60vh;
+}
+
+main {
+    width: 65.5vw;
+    min-width: 604px;
+    min-height: 190px;
+    height: 80vh;
+    padding: 20px 45px 20px;
+    background-color: #be6a8e;
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+section {
+    padding: 10px 45px;
+    margin: 8px 0;
+    background-color: #da92ae;
+    min-width: 300px;
+    min-height: 50px;
+    height: 30%;
+}
+
+footer {
+    margin-bottom: 10px;
+    min-height: 39px;
+    padding: 10px 25px;
+    background-color: #73083a;
+}

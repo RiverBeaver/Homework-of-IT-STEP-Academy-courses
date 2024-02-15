@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: rgb(201 235 248);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: rgb(15, 13, 20);
+    text-decoration: none;
+    width: 5rem;
+    padding: 0.5rem 0.5rem 0.7rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: rgb(56, 183, 230);
+}
+
+a:active {
+    box-shadow: inset 1px 1px 2px 1px rgb(98 132 173 / 97%);
+}

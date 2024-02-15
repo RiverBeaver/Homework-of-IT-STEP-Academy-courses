@@ -1,0 +1,38 @@
+div.inputs {
+
+    @media (max-width: 730px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 25rem;
+    }
+
+    input {
+        outline: none;
+        border: 1px solid $color-bd-input;
+        border-radius: 0.25rem;
+        padding: 0.7rem 1.25rem 0.55rem;
+    }
+
+    input::placeholder {
+        color: $color-placeholder;
+    }
+
+    input:valid:not(:placeholder-shown) {
+        color: $active;
+        border-color: $active;
+        background-image: url(img/valid.png);
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size: 1rem;
+    }
+
+    input:invalid:not(:placeholder-shown) {
+        color: $danger;
+        border-color: $danger;
+        background-image: url(img/invalid.png);
+        background-repeat: no-repeat;
+        background-position: right 0.5rem center;
+        background-size: 1rem;
+    }
+}

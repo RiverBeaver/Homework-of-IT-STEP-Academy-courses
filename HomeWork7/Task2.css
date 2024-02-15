@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    margin: 20px;
+}
+
+dl, div {
+    padding-right: 20px;
+    margin-bottom: 20px;
+    width: 60vw;
+}
+
+dl, dd, h4 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+section {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+figcaption {
+    background-color: rgb(42, 57, 91);
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    main {
+        font-size: 15px;
+    }
+}
+
+@media (min-height: 948px) and (min-width: 800px) {
+    div {
+        padding-bottom: 30vh;
+    }    
+}
+
+@media (max-height: 800px) and (min-width: 1132px) {
+        main {
+            font-size: 17px;
+        }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+    main {
+        height: auto;
+    }
+
+    dl, div {
+        width: 90vw;
+        padding-right: 0;
+    }
+
+    section {
+        margin: 20px 0;
+        width: 90vw;
+        order: 0;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    figure {
+        width: 45vw;
+        margin: 0;
+    }
+
+    figure:first-of-type {
+        margin-right: 10px;
+    }
+
+    figure:last-of-type {
+
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        height: auto;
+    }
+
+    dl, div {
+        width: 90vw;
+        padding-right: 0;
+    }
+
+    section {
+        width: 90vw;
+        order: 0;
+    }
+
+    figure {
+        width: 90vw;
+        margin: 20px 0;
+
+    }
+}

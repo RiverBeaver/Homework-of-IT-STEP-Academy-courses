@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    input {
+        font-size: 1.25rem;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgb(41, 41, 41);
+        background-color: #aad3d3;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    input::placeholder {
+        color:rgb(108, 153, 153)
+    }
+
+    label {
+        font-weight: 300;
+        margin: 0.75rem 0;
+    }
+
+    @import 'numberCard';
+
+    @import 'dateAndCVV';
+}

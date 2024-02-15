@@ -1,0 +1,115 @@
+div.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.384);
+    
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+
+        section.personal-details > h3 {
+            margin-top: 2rem;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        div {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            label {
+                div {
+                    display: inline-block;
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+
+            input, select {
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgb(133, 133, 133);
+                padding: 0.5rem 1rem;
+                width: 100%;
+                background-color: transparent;
+            }
+
+            input:invalid:not(:placeholder-shown):not(:focus) {
+                color: #d23a5b;
+                border-color: #be304f;
+                background-image: url(img/invalid.png);
+                background-repeat: no-repeat;
+                background-position: right 0.5rem center;
+                background-size: 1rem;
+            }
+
+            input:valid:not(:placeholder-shown) {
+                color: #479dde;
+                border-color: #479dde;
+            }
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:focus {
+              transition: background-color 600000s 0s, color 600000s 0s;
+            }
+        }
+
+        div.username {
+            label > div {
+                background-image: url(img/username.png);
+            }
+        }
+
+        div.email-address {
+            label > div {
+                background-image: url(img/email.png);
+            }
+        }
+
+        div.passwords {
+            gap: 1rem;
+
+            @media (max-width: 600px) {
+                display: grid;
+                
+                div.confirm-password {
+                    padding-left: 2.25rem;
+                }
+            }
+
+            label > div {
+                background-image: url(img/pswd.png);
+            }
+
+            div {
+                flex-grow: 1;
+            }
+        }
+
+        div.other-data {
+            input::placeholder {
+                color: black;
+            }
+        }
+    }
+
+    section.personal-details {
+        div {
+            gap: 1rem;
+
+            @media (max-width: 600px) {
+                flex-direction: column;           
+            }
+        }
+    }
+
+    @import 'checkboxes';
+}

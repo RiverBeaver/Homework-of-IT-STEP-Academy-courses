@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(242, 241, 241);
+}
+
+#main {
+    text-align: justify;
+    margin: 20px;
+    font-family: "Microsoft YaHei";
+}
+
+h1 {
+    text-align: center;
+    font-family: "Courier New Bold";
+}
+
+.q {
+    margin: 10px 40px 10px 0px;
+    text-align: right;
+}
+
+
+#italic {
+    font-family: "Microsoft YaHei";
+    font-style: italic;
+}
+
+#small {
+    font-size: x-small;
+}
+
+p {
+    z-index: -1;
+    position:relative;
+
+}
+
+.p-1 {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.p0 {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.p1 {
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.p2 {
+    color: rgb(0, 0, 0, 0.2);
+}
+
+.p3 {
+    color: rgb(0, 0, 0, 0.1);
+}
+
+
+/* div.shadow {
+    margin: 0px;
+    box-shadow:inset -23px -50px 50px 0px rgb(242, 241, 241);;
+} */
+
+p::first-letter {
+    font-family: "Courier New Bold";
+    font-size: 22px;
+    font-weight: bold;
+}

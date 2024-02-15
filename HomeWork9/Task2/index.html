@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="inputs">
+            <h3>Inputs</h3>
+            <input type="text" placeholder="Enter some text">
+            <input type="text" value="valid text" placeholder="Enter some text">
+            <input type="email" value="invalid text" placeholder="Enter some text">
+        </div>
+        <div class="check-boxes">
+            <h3>Check boxes</h3>
+            <div>
+                <input type="checkbox" id="check1" checked>
+                <label for="check1"></label>
+                <label for="check1">Subscribe</label>
+            </div>
+            <div>
+                <input type="checkbox" id="check2">
+                <label for="check2"></label>
+                <label for="check2">Subscribe</label>
+            </div>
+        </div>
+        <div class="radio-buttons">
+            <h3>Radio buttons</h3>
+            <div>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <h3>Buttons</h3>
+            <div>
+                <button name="active">Active</button>
+                <button name="active-hover">Hover</button>
+                <button name="danger">Danger</button>
+                <button name="danger-hover">Hover</button>
+                <button name="disabled">Disabled</button>
+                <button name="plus">
+                    <div>+</div>
+                </button>
+                <button name="minus">
+                    <div>-</div>
+                </button>
+            </div>
+        </div>
+        <div class="text-area">
+            <label for="area"><h3>Text area</h3></label>
+            <textarea name="area" id="area" cols="30" rows="10" placeholder="Enter some text..."></textarea>
+        </div>
+    </main>
+</body>
+</html>

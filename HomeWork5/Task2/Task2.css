@@ -1,0 +1,11 @@
+img {
+    transform: scale(40%);
+    filter: grayscale(100%);
+
+}
+
+img:hover {
+    transform: scale(100%);
+    filter: grayscale(0);
+    transition: all 5s ease-in-out 0s;
+}

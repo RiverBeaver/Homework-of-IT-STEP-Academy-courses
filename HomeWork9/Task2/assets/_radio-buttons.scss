@@ -1,0 +1,38 @@
+div.radio-buttons {
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            margin: 0;
+        }
+
+        input {
+            display: none;
+        }
+
+        input + label, input + label:before {
+            transition: all .2s ease-in-out;
+            display: flex;
+            align-items: center;
+        }
+
+        input + label:before {
+            content: '';
+            display: inline-block;
+            width: 0.9rem;
+            height: 0.9rem;
+            margin-right: 0.25rem;
+            background-color: white;
+            outline: 1px solid $active;
+            border: 2px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input:checked + label:before {
+            background-color: $active;
+        }
+    }
+}

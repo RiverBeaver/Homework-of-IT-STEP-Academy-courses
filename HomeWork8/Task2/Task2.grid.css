@@ -1,0 +1,123 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.conteaner {
+    max-width: 1000px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem auto;
+    min-width: 400px;
+}
+
+.Anie, .Jack {
+    align-items: center;
+}
+
+.Anie {
+    display: flex;
+    margin-right: 10rem;
+}
+
+.Jack {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 10rem;
+}
+
+.sender {
+    display: flex;
+    width: 10rem;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.Anie .sender {
+    justify-content: flex-end;
+}
+
+.Anie .info {
+    text-align: right;
+}
+
+.date {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.img {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Anie .img {
+    background-image: url(icons_hw_module_8_9/avatar_2.png);
+}
+
+.Jack .img {
+    background-image: url(icons_hw_module_8_9/avatar_1.png);
+    order: -1;
+}
+
+.message {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.Anie .message {
+    border-radius: 1rem 1rem 1rem 0;
+    background-color: #ffb7c2;
+}
+
+.Jack .message {
+    border-radius: 1rem 1rem 0 1rem;
+    background-color: #aed9e7;
+}
+
+@media (max-width: 700px) {
+
+    .conteaner {
+        width: 90vw;
+    }
+    .sender {
+        width: 6.75rem;
+        flex-direction: column;
+    }
+
+    .Anie {
+        margin-right: 6.75rem;
+    }
+    
+    .Jack {
+        margin-left: 6.75rem;
+    }
+
+    .Anie .sender {
+        align-items: flex-end;
+    }
+
+    .Jack .sender {
+        align-items: flex-start;
+    }
+
+    .Anie .info {
+        padding-right: 0.5rem;
+    }
+
+    .Jack .info {
+        padding-left: 0.5rem;
+    }
+
+    .Anie .img {
+        order: -1;
+    }
+}

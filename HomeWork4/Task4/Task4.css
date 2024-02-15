@@ -1,0 +1,106 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    transition: all 0.3s;
+}
+
+footer {
+    color: #ededed;
+    background-color: #2f5271;
+    min-width: 965px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+}
+
+div#container {
+    margin: auto;
+    width: 965px;
+    display: block;
+}
+
+div {
+    display: inline-block;
+}
+
+div#container > div {
+    margin: 42px 35px 13px 120px;
+    vertical-align: top;
+}
+
+div.menu {
+    width: 140px;
+}
+
+a {
+    color: #ededed;
+    text-decoration: none;
+}
+
+div.menu > a {
+    display: block;
+    margin-top: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #ededed;
+}
+
+div#container > div.icones {
+    margin: 45px 20px 0 95px;
+}
+
+#facebook, #instagram, #YouTube {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px 10px;
+    width: 35px;
+    height: 35px;
+}
+
+#facebook {
+    background-image: url(icons_hw_module_3/fb_gray.png);
+}
+
+#facebook:hover {
+    background-image: url(icons_hw_module_3/fb.png);
+}
+
+#instagram {
+    background-image: url(icons_hw_module_3/insta_gray.png);
+}
+
+#instagram:hover {
+    background-image: url(icons_hw_module_3/insta.png);
+}
+
+#YouTube {
+    background-image: url(icons_hw_module_3/youtube_gray.png);
+}
+
+#YouTube:hover {
+    background-image: url(icons_hw_module_3/youtube.png);
+}
+
+a.icones:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin: 8px 50px;
+    color: #ededed;
+}
+
+p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    font-size: 10px;
+}

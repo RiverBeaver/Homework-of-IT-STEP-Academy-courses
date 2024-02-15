@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="img"></div>
+        <h1>CREDIT CARD DETAILS</h1>
+
+        <form action="" method="GET">
+            <label for="number">Card Number</label>
+
+            <div class="numberCard">
+                <input type="tel" name="number" id="number" maxlength="4" pattern="[0-9]{4}" placeholder="1234">
+                <input type="tel" name="number" id="number" maxlength="4" pattern="[0-9]{4}" placeholder="5678">
+                <input type="tel" name="number" id="number" maxlength="4" pattern="[0-9]{4}" placeholder="9012">
+                <input type="tel" name="number" id="number" maxlength="4" pattern="[0-9]{4}" placeholder="3456">
+            </div>      
+            <label for="name">Name on Card</label>
+            <input type="text" name="name" id="name" placeholder="Name Surname">
+            <div class="dateAndCVV">
+                <label for="date">Expiry Date</label>
+                <label for="cvv">CVV / CVN</label>
+                <input type="number" id="date"  min="1" max="12" maxlength="2" placeholder="02">
+                <input type="number" min="1900" max="2100" maxlength="4" placeholder="2017">
+                <input type="password" name="cvv" id="cvv" maxlength="3" placeholder="***">
+          </div>
+        </form>
+    </main>
+</body>
+</html>

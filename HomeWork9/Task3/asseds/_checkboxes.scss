@@ -1,0 +1,36 @@
+div.checkboxes {
+    padding: 1rem 0.25rem 0.25rem;
+    display: grid;
+    align-items: end;
+    gap: 1rem;
+    
+    div {
+
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        label::before {
+            content: '';
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
+            border: 1px solid #adb5bd;
+            border-radius: 0.15em;
+            margin-right: 0.5em;
+            background-color: #dfdfdf;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 90% 90%;
+            transition: all 0.1s ease-in-out; 
+        }
+
+        input:checked +  label::before {
+            border-color: #0b76ef;
+            background-color: #0b76ef;
+            background-image: url(img/check.png);
+        }
+    }
+}

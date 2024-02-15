@@ -1,0 +1,235 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+body main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+body main h3 {
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 730px) {
+  body main div.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 25rem;
+  }
+}
+body main div.inputs input {
+  outline: none;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 0.25rem;
+  padding: 0.7rem 1.25rem 0.55rem;
+}
+body main div.inputs input::-moz-placeholder {
+  color: #c8c8c8;
+}
+body main div.inputs input:-ms-input-placeholder {
+  color: #c8c8c8;
+}
+body main div.inputs input::placeholder {
+  color: #c8c8c8;
+}
+body main div.inputs input:valid:not(:-moz-placeholder-shown) {
+  color: #3faf47;
+  border-color: #3faf47;
+  background-image: url(img/valid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.inputs input:valid:not(:-ms-input-placeholder) {
+  color: #3faf47;
+  border-color: #3faf47;
+  background-image: url(img/valid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.inputs input:valid:not(:placeholder-shown) {
+  color: #3faf47;
+  border-color: #3faf47;
+  background-image: url(img/valid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.inputs input:invalid:not(:-moz-placeholder-shown) {
+  color: #e53e61;
+  border-color: #e53e61;
+  background-image: url(img/invalid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.inputs input:invalid:not(:-ms-input-placeholder) {
+  color: #e53e61;
+  border-color: #e53e61;
+  background-image: url(img/invalid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.inputs input:invalid:not(:placeholder-shown) {
+  color: #e53e61;
+  border-color: #e53e61;
+  background-image: url(img/invalid.png);
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+body main div.check-boxes div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+body main div.check-boxes div input {
+  display: none;
+}
+body main div.check-boxes div input + label, body main div.check-boxes div input + label:before {
+  transition: all 0.3s ease-in-out;
+}
+body main div.check-boxes div input + label {
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  height: 1rem;
+  border: 1px solid #e53e61;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+}
+body main div.check-boxes div input + label:before {
+  content: "";
+  width: 1.15rem;
+  height: 0.95rem;
+  position: absolute;
+  top: 0.025rem;
+  right: 0.025rem;
+  background-color: #e53e61;
+  border-radius: 0.25rem;
+}
+body main div.check-boxes div input:checked + label {
+  border-color: #3faf47;
+}
+body main div.check-boxes div input:checked + label:before {
+  right: 0.825rem;
+  background-color: #3faf47;
+}
+body main div.radio-buttons div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body main div.radio-buttons div p {
+  margin: 0;
+}
+body main div.radio-buttons div input {
+  display: none;
+}
+body main div.radio-buttons div input + label, body main div.radio-buttons div input + label:before {
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+body main div.radio-buttons div input + label:before {
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.25rem;
+  background-color: white;
+  outline: 1px solid #3faf47;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+body main div.radio-buttons div input:checked + label:before {
+  background-color: #3faf47;
+}
+body main div.buttons div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+body main div.buttons div button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+body main div.buttons div button:hover {
+  box-shadow: 0px 0px 5px 1px #90807b;
+}
+body main div.buttons div button[name=active] {
+  background-color: #3faf47;
+}
+body main div.buttons div button[name=active]:hover {
+  background-color: #28782d;
+}
+body main div.buttons div button[name=active-hover] {
+  background-color: #28782d;
+}
+body main div.buttons div button[name=danger] {
+  background-color: #e53e61;
+}
+body main div.buttons div button[name=danger]:hover {
+  background-color: #98243d;
+}
+body main div.buttons div button[name=danger-hover] {
+  background-color: #98243d;
+}
+body main div.buttons div button[name=disabled] {
+  background-color: #818181;
+}
+body main div.buttons div button[name=plus], body main div.buttons div button[name=minus] {
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+}
+body main div.buttons div button[name=plus] div, body main div.buttons div button[name=minus] div {
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+body main div.buttons div button[name=plus] {
+  background-color: #3faf47;
+}
+body main div.buttons div button[name=minus] {
+  background-color: #e53e61;
+}
+body main div.text-area textarea {
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  width: 23rem;
+  height: 5rem;
+  font-size: 0.75rem;
+  min-height: 1rem;
+  min-width: 6rem;
+}
+@media (max-width: 500px) {
+  body main div.text-area textarea {
+    width: 90%;
+  }
+}
+body main div.text-area textarea::-moz-placeholder {
+  color: #c8c8c8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body main div.text-area textarea:-ms-input-placeholder {
+  color: #c8c8c8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body main div.text-area textarea::placeholder {
+  color: #c8c8c8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+div.check-boxes {
+    div {
+        display: inline-block;
+        margin-right: 1rem;
+
+        input {
+            display: none;
+        }
+
+        input + label, input + label:before {
+            transition: all .3s ease-in-out;
+        }
+
+        input + label {
+            display: inline-block;
+            position: relative;
+            width: 2rem;
+            height: 1rem;
+            border: 1px solid $danger;
+            border-radius: 0.25rem;
+            background-color: #fff;
+            cursor: pointer;
+            vertical-align: middle;
+        }
+
+        input + label:before {
+            content: '';
+            width: 1.15rem;
+            height: 0.95rem;
+            position: absolute;
+            top: 0.025rem;
+            right: 0.025rem;
+            background-color: $danger;
+            border-radius: 0.25rem;
+        }
+
+        input:checked + label {
+            border-color: $active;
+        }
+
+        input:checked + label:before {
+            right: 0.825rem;
+            background-color: $active;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+header, menu, aside, main, section, footer {
+    margin: 5px;
+}
+
+header, menu, footer {
+    width: 710px;
+}
+
+#container {
+    margin: 40px auto;
+    width: 900px;
+}
+
+header {
+    padding: 20px 25px;
+    background-color: #882e54;
+    margin: 40px 5px 10px;
+}
+
+menu {
+    padding: 10px 25px;
+    background-color: #73083a;
+}
+
+aside {
+    padding: 20px 25px 25px;
+    background-color: #be6a8e;
+    margin-bottom: 8px;
+}
+
+#asides {
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    margin: 0px;
+}
+
+#asides aside:nth-of-type(2) {
+    height: 60px;
+}
+
+#container > aside:nth-of-type(1) {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 45px;
+    padding-right: 37px;
+}
+
+main {
+    padding: 20px 45px 20px;
+    background-color: #be6a8e;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+section {
+    padding: 10px 45px;
+    margin: 8px 0;
+    background-color: #da92ae;
+    width: 300px;
+    height: 50px;
+}
+
+footer {
+    padding: 10px 25px;
+    background-color: #73083a;
+}
